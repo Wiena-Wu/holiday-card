@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas & Birthday Celebration</title>
+    <!-- Social Media Preview Tags -->
+    <meta property="og:title" content="Merry Christmas & Birthday Party Invitation! 🎄🎂">
+    <meta property="og:description" content="Join us for a special Christmas celebration and birthday party!">
+    <meta property="og:image" content="/api/placeholder/800/600">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Merry Christmas & Birthday Party Invitation! 🎄🎂">
+    <meta name="twitter:description" content="Join us for a special Christmas celebration and birthday party!">
+    <meta name="twitter:image" content="/api/placeholder/800/600">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            margin: 0;
+            padding: 16px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #1a472a;
+            background-image: 
+                radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.2) 2px, transparent 0),
+                radial-gradient(circle at 75px 75px, rgba(255, 255, 255, 0.2) 2px, transparent 0);
+            background-size: 100px 100px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.5;
+        }
+
+        .card {
+            background: white;
+            padding: 32px 24px;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+            max-width: 100%;
+            width: 360px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #c41e3a;
+        }
+
+        .card::before {
+            content: "🎄";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            font-size: 24px;
+            opacity: 0.5;
+        }
+
+        .card::after {
+            content: "🎄";
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            opacity: 0.5;
+        }
+
+        .card-header {
+            margin-bottom: 24px;
+            position: relative;
+        }
+
+        h1 {
+            color: #c41e3a;
+            margin: 8px 0;
+            font-size: 28px;
+            font-weight: 700;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .emoji-container {
+            font-size: 40px;
+            margin: 16px 0;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+        }
+
+        .message {
+            color: #1a472a;
+            margin: 24px 0;
+            font-size: 16px;
+            position: relative;
+        }
+
+        .details {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 24px 0;
+            border: 1px solid #e9ecef;
+            position: relative;
+        }
+
+        .details::before {
+            content: "⭐";
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 24px;
+        }
+
+        .date, .location {
+            color: #444;
+            margin: 12px 0;
+        }
+
+        .highlight {
+            color: #c41e3a;
+            font-weight: bold;
+        }
+
+        .snowflake {
+            position: absolute;
+            color: #c41e3a;
+            opacity: 0.3;
+            font-size: 20px;
+        }
+
+        .birthday-text {
+            font-size: 24px;
+            font-weight: bold;
+            color: #FF69B4;
+            margin: 16px 0;
+            padding: 8px;
+            border-radius: 8px;
+            background: linear-gradient(45deg, rgba(255, 182, 193, 0.3), rgba(255, 105, 180, 0.1));
+        }
+
+        @keyframes twinkle {
+            0%, 100% { opacity: 0.3; }
+            50% { opacity: 0.6; }
+        }
+
+        .decoration {
+            position: absolute;
+            animation: twinkle 2s infinite;
+        }
+
+        .decoration:nth-child(1) { top: 20px; left: 20px; }
+        .decoration:nth-child(2) { top: 20px; right: 20px; }
+        .decoration:nth-child(3) { bottom: 20px; left: 20px; }
+        .decoration:nth-child(4) { bottom: 20px; right: 20px; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <span class="decoration">❄️</span>
+        <span class="decoration">🎁</span>
+        <span class="decoration">⭐</span>
+        <span class="decoration">🎄</span>
+        
+        <div class="card-header">
+            <div class="emoji-container">
+                <span>🎄</span>
+                <span>🎂</span>
+                <span>🎄</span>
+            </div>
+            <h1>Merry Christmas!</h1>
+        </div>
+        
+        <div class="message">
+            You're invited to celebrate<br>
+            <div class="birthday-text">Cynthia's 6th Birthday Party!</div>
+        </div>
+
+        <div class="details">
+            <div class="date">
+                <strong>When:</strong><br>
+                <span class="highlight">SATURDAY, JANUARY 11, 2025</span><br>
+                2:00 PM - 4:00 PM
+            </div>
+            
+            <div class="location">
+                <strong>Where:</strong><br>
+                2015 Silver Bell Rd #195<br>
+                Eagan, MN 55122
+            </div>
+        </div>
+    </div>
+</body>
+</html>
